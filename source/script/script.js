@@ -92,14 +92,4 @@ function Tags( element ) {
 	onKeyUp()
 }
 
-
-
-// run immediately
-(function(){
-	let DOMSimpleTags = document.querySelectorAll('.simple-tags')
-		DOMSimpleTags = Array.from( DOMSimpleTags )
-		DOMSimpleTags.forEach( function( currentValue, index ) {
-			// create Tags
-			new Tags( currentValue )
-		})
-})()
+export default Tags;
