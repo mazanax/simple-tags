@@ -83,14 +83,6 @@ function Tags(element) {
   DOMCreate();
   DOMRender();
   onKeyUp();
-} // run immediately
+}
 
-
-(function () {
-  var DOMSimpleTags = document.querySelectorAll('.simple-tags');
-  DOMSimpleTags = Array.from(DOMSimpleTags);
-  DOMSimpleTags.forEach(function (currentValue, index) {
-    // create Tags
-    new Tags(currentValue);
-  });
-})();
+export default Tags;
